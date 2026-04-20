@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM SDR | Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body data-page="login" class="login-body">
+    <main class="login-container">
+      <section class="login-card">
+        <h1>CRM SDR</h1>
+        <p class="subtitle">Acesse sua conta para gerenciar leads e tarefas.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="username">Usuário</label>
+          <input id="username" name="username" type="text" required autocomplete="username" />
+
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" required autocomplete="current-password" />
+
+          <button type="submit" class="btn-primary">Entrar</button>
+          <p id="loginError" class="error-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
